@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+
+    <form action="submit_form.php" method="post">
+        <!-- Nama Lengkap -->
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+        <br><br>
+
+        <!-- NIM -->
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required>
+        <br><br>
+
+        <!-- Jenis Kelamin -->
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <input type="radio" id="pria" name="jenis_kelamin" value="Pria" required>
+        <label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita" required>
+        <label for="wanita">Wanita</label>
+        <br><br>
+
+        <!-- Program Studi -->
+        <label for="prodi">Program Studi:</label>
+        <select id="prodi" name="prodi" required>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Manajemen Informatika">Manajemen Informatika</option>
+            <option value="Teknologi Informasi">Teknologi Informasi</option>
+        </select>
+        <br><br>
+
+        <!-- Alamat -->
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea>
+        <br><br>
+
+        <!-- Tanggal Lahir -->
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- No. Telepon -->
+        <label for="telepon">No. Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" required>
+        <br><br>
+
+        <!-- Tombol Submit -->
+        <button type="submit">Daftar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
