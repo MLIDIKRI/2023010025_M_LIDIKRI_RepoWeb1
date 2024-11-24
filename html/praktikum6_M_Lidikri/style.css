@@ -34,7 +34,7 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    background-color: #87CEEB;
+    background-color: #f10a2d;
     padding: 10px;
     justify-content:center;
 }
@@ -72,16 +72,26 @@ main {
     right: 20px;
     top: 21px;
     bottom: 21px;
+    line-height: 50px;
 }
 
 .sidebar ul {
     list-style-type: none;
+    text-align: right;
+
 }
 
-.sidebar ul li {
+.sidebar ul li a {
     margin: 10px 0;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid green;
+    background-color: #333;
+    color: #f9f9f9;
 }
-
+.sidebar ul li a:hover{
+    background-color: red;
+}
 footer {
     background-color: #d3d3d3;
     padding: 10px;
@@ -164,4 +174,9 @@ footer {
 }
 .pribadi li{
     margin: 0 15px;
+}
+
+.Daftar {
+    text-decoration: underline;
+    text-align: center;
 }
